@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma3refa tasks</title>
+</head>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8F8;
+    margin: 0;
+}
+
+.food-info{
+    background-color: #A3CAF5; 
+    padding: 50px 20px;
+}
+
+.food-info h2{
+    text-align: left;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.food-info p{
+    text-align: left;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.food-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.food{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.food img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.food:hover img{
+    transform: scale(1.05);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #DA36369E;  
+    display: block;
+    padding: 5px;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.food:hover .overlay{
+    opacity: 1; 
+}
+
+.overlay button{
+    color: white;
+    background-color: #ADAAAA;  
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.overlay p{
+    color: black;
+    font-size: 0.9rem;
+    margin: 15px 0;
+}
+</style>
+
+<body>
+    <section class="food-info">
+        <h2>Our Menu</h2>
+        <p>Koshari tastes so delicious with rice, pasta, and spicy tomato sauce. It is full of flavor and makes you feel satisfied. Everyone in Egypt loves to eat it.</p>
+        
+        <div class="food-container">
+            <div class="food">
+                <img src="img/food.png" alt="no photo">
+                <div class="overlay">
+                    <button>Koshari</button>
+                    <p>It is a traditional Egyptian dish that has become a favorite meal for millions.</p>
+                </div>
+            </div>
+            <div class="food">
+                <img src="img/food.png" alt="no photo">
+                <div class="overlay">
+                    <button>Koshari</button>
+                    <p>It is a traditional Egyptian dish that has become a favorite meal for millions.</p>
+                </div>
+            </div>
+            <div class="food">
+                <img src="img/food.png" alt="no photo">
+                <div class="overlay">
+                    <button>Koshari</button>
+                    <p>It is a traditional Egyptian dish that has become a favorite meal for millions.</p>
+                </div>
+            </div>
+            <div class="food">
+                <img src="img/food.png" alt="no photo">
+                <div class="overlay">
+                    <button>Koshari</button>
+                    <p>It is a traditional Egyptian dish that has become a favorite meal for millions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
